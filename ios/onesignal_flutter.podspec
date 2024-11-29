@@ -13,7 +13,16 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'OneSignalXCFramework', '5.2.8'
+  # s.dependency 'OneSignalXCFramework', '5.2.8'
+  s.dependency 'OneSignalXCFramework/OneSignal', '5.2.8'
+  s.dependency 'OneSignalXCFramework/OneSignalCore', '5.2.8'
+  s.dependency 'OneSignalXCFramework/OneSignalExtension', '5.2.8'
+  s.dependency 'OneSignalXCFramework/OneSignalInAppMessages', '5.2.8'
+  # s.dependency 'OneSignalXCFramework/OneSignalLocation', '5.2.8'
+  s.dependency 'OneSignalXCFramework/OneSignalNotifications', '5.2.8'
+  s.dependency 'OneSignalXCFramework/OneSignalOSCore', '5.2.8'
+  s.dependency 'OneSignalXCFramework/OneSignalOutcomes', '5.2.8'
+  s.dependency 'OneSignalXCFramework/OneSignalUser', '5.2.8'
   s.ios.deployment_target = '11.0'
   s.static_framework = true
 end
